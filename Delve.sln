@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelveInternals", "DelveInternals\DelveInternals.csproj", "{AC9666FF-531A-43D9-BF5A-5223735BB518}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delve", "DelveFrontend\Delve.csproj", "{02538B5F-10A3-42C0-8954-0E1973FEADCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC9666FF-531A-43D9-BF5A-5223735BB518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC9666FF-531A-43D9-BF5A-5223735BB518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC9666FF-531A-43D9-BF5A-5223735BB518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC9666FF-531A-43D9-BF5A-5223735BB518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02538B5F-10A3-42C0-8954-0E1973FEADCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02538B5F-10A3-42C0-8954-0E1973FEADCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02538B5F-10A3-42C0-8954-0E1973FEADCF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{02538B5F-10A3-42C0-8954-0E1973FEADCF}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal
