@@ -1,4 +1,6 @@
-How to compile/run:
+
+# Lucas Forsythe - 801251551
+## How to compile/run:
 
 1. Install godot 4.2.1 - .NET VERSION
 make sure you install the .Net version or the project will not run
