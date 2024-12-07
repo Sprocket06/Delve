@@ -14,6 +14,9 @@ public partial class TeamSelect : Control
 	private Button _swap2;
 	private Button _swap3;
 	private Button _startBattle;
+	private Button _upgrade1;
+	private Button _upgrade2;
+	private Button _upgrade3;
 
 	private UnitDisplay _unit1;
 	private UnitDisplay _unit2;
@@ -28,6 +31,9 @@ public partial class TeamSelect : Control
 		_swap1 = GetNode<Button>("TeamUnits/Unit1/Swap Button");
 		_swap2 = GetNode<Button>("TeamUnits/Unit2/Swap Button");
 		_swap3 = GetNode<Button>("TeamUnits/Unit3/Swap Button");
+		_upgrade1 = GetNode<Button>("TeamUnits/Unit1/Upgrade");
+		_upgrade2 = GetNode<Button>("TeamUnits/Unit2/Upgrade2");
+		_upgrade3 = GetNode<Button>("TeamUnits/Unit3/Upgrade3");
 		_startBattle = GetNode<Button>("start_battle_button");
 		_unit1 = GetNode<UnitDisplay>("TeamUnits/Unit1/unit_display");
 		_unit2 = GetNode<UnitDisplay>("TeamUnits/Unit2/unit_display2");
@@ -38,7 +44,9 @@ public partial class TeamSelect : Control
 		_swap1.Pressed += () => SwapPressed(0);
 		_swap2.Pressed += () => SwapPressed(1);
 		_swap3.Pressed += () => SwapPressed(2);
-
+		_upgrade1.Pressed += () => UpgradePressed(0);
+		_upgrade2.Pressed += () => UpgradePressed(1);
+		_upgrade3.Pressed += () => UpgradePressed(2);
 		_startBattle.Pressed += StartBattle;
 		
 		// scenes don't save state by default, so we preserve the state of the current team in our singleton and reload it
@@ -58,6 +66,12 @@ public partial class TeamSelect : Control
 	{
 		CurrentModifyingSlot = n;
 		GameManager.Instance.ChangeScene("res://unit_select.tscn");	
+	}
+
+	private void UpgradePressed(int n)
+	{
+		CurrentModifyingSlot = n;
+		GameManager.Instance.ChangeScene("res://upgrade_unit.tscn");
 	}
 
 	private void StartBattle()

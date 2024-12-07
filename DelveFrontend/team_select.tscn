@@ -5,10 +5,10 @@
 
 [sub_resource type="Theme" id="Theme_va7dc"]
 
-[sub_resource type="SystemFont" id="SystemFont_5x5b1"]
+[sub_resource type="SystemFont" id="SystemFont_03kmu"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_0y06d"]
-font = SubResource("SystemFont_5x5b1")
+font = SubResource("SystemFont_03kmu")
 font_size = 48
 
 [node name="TeamSelect" type="Control"]

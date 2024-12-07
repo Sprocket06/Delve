@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://h8mj5va52qyo"]
+[gd_scene load_steps=6 format=3 uid="uid://h8mj5va52qyo"]
 
 [ext_resource type="PackedScene" uid="uid://ww24fj2v3nts" path="res://unit_display.tscn" id="1_vw4hh"]
+[ext_resource type="Script" path="res://UpgradeUnit.cs" id="1_yrkx1"]
 
 [sub_resource type="SystemFont" id="SystemFont_5x5b1"]
 
@@ -17,6 +18,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_yrkx1")
 
 [node name="scene_title" type="Label" parent="."]
 layout_mode = 1
@@ -79,3 +81,9 @@ text = "Buy Armor (100 Gold)"
 [node name="weapon" type="Button" parent="TeamUnits/Unit1"]
 layout_mode = 2
 text = "Buy Weapon (100 Gold)"
+
+[node name="BackButton" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_font_sizes/font_size = 24
+text = "Back"
