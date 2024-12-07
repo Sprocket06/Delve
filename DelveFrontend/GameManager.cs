@@ -9,6 +9,9 @@ public partial class GameManager : Node2D
 	public static GameManager Instance { get; private set; }
 	public Node CurrentScene { get; set; }
 	public Unit[] CurrentTeam { get; set; }
+	public int Gold { get; set; } = 0;
+	public int LastRoomsCleared = 0;
+	public int LastGoldCollected = 0;
 	
 	private Dictionary<string, Node> Scenes { get; set; }
 	
@@ -18,7 +21,7 @@ public partial class GameManager : Node2D
 		var root = GetTree().Root;
 		CurrentScene = root.GetChild(root.GetChildCount() - 1);
 
-		CurrentTeam = new Unit[3];
+		CurrentTeam = new Unit[] { new Knight(), new Mage(), new Healer() };
 		Scenes = new Dictionary<string, Node>();
 		
 		Instance = this;

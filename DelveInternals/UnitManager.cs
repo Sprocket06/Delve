@@ -8,7 +8,6 @@ public static class UnitManager
 
    static UnitManager()
    {
-      Units = new();
-      
+      Units = new() { new Knight(), new Warrior(), new Mage(), new Healer() };
    }
 }
